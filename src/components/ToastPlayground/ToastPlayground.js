@@ -24,7 +24,7 @@ function ToastPlayground() {
       <header>
         <img
           alt="Cute toast mascot"
-          src="/toast.png"
+          src="toast.png"
         />
         <h1>Toast Playground</h1>
       </header>
