@@ -10,6 +10,11 @@
   color: white;
   font-weight: 600;
   font-size: 1.25rem;
-  cursor: pointer;
   outline-offset: 4px;
+}
+.button:not([disabled]) {
+  cursor: pointer;
+}
+.button[disabled] {
+  background: grey;
 }

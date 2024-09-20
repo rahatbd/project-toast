@@ -48,6 +48,7 @@ function ToastPlayground() {
               id="message"
               className={styles.messageInput}
               value={message}
+              placeholder='Enter toast message...'
               onChange={event => setMessage(event.target.value)}
             />
           </div>
@@ -81,7 +82,7 @@ function ToastPlayground() {
         <div className={styles.row}>
           <div className={styles.label} />
           <div className={`${styles.inputWrapper} ${styles.radioWrapper}`}>
-            <Button>Pop Toast!</Button>
+            <Button disabled={!message.trim()}>Pop Toast!</Button>
           </div>
         </div>
       </form>
